@@ -1,0 +1,14 @@
+{
+  "name": "norwealth",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "sites/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @norwealth/web",
+    "dev:app": "npm run dev --workspace @norwealth/app",
+    "build": "npm run build --workspaces --if-present"
+  }
+}

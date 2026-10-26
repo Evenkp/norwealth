@@ -1,0 +1,10 @@
+/* Noon — white-label-tenant.
+   Overstyrer de samme variabelnavnene som tokens.css. En ny kunde er
+   én slik fil, ikke en PHP-snutt som sjekker vertsnavn.
+   Verdiene under er plassholdere til Noon-paletten er bekreftet. */
+
+[data-tenant="noon"] {
+  /* --nw-brand-500: [NOON PRIMÆRFARGE]; */
+  /* --nw-brand-600: [NOON MØRK]; */
+  /* --nw-accent-500: [NOON AKSENT]; */
+}

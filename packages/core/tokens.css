@@ -1,0 +1,233 @@
+/* NorWealth — generert fra tokens.json (designsystem v1) */
+
+:root,
+[data-theme="light"] {
+  /* Flater */
+  --nw-surface-000: #ffffff;
+  --nw-surface-100: #faf9f6;
+  --nw-surface-200: #f1eee8;
+
+  /* Kanter */
+  --nw-border-100: #e6e1d8;
+  --nw-border-200: #d9d2c6;
+
+  /* Tekst */
+  --nw-ink-100: #10293b;
+  --nw-ink-200: #3c5567;
+  --nw-ink-300: #5a6e7c;
+
+  /* Identitet */
+  --nw-brand-400: #2a6080;
+  --nw-brand-500: #0e3a54;
+  --nw-brand-600: #072b41;
+  --nw-on-brand: #ffffff;
+  --nw-on-brand-muted: #c8d4dc;
+
+  /* Aksent */
+  --nw-accent-100: #f6ebd9;
+  --nw-accent-500: #e8c98e;
+  --nw-accent-700: #8a5618;
+  --nw-accent-900: #7a4e12;
+  --nw-on-accent: #10293b;
+
+  /* Verditegn */
+  --nw-positive-600: #1d6b4f;
+  --nw-negative-600: #9c3326;
+}
+
+[data-theme="dark"] {
+  --nw-surface-000: #16303e;
+  --nw-surface-100: #0c1c27;
+  --nw-surface-200: #142c3a;
+
+  --nw-border-100: #27414f;
+  --nw-border-200: #4a6a7e;
+
+  --nw-ink-100: #f2f0ea;
+  --nw-ink-200: #c2d0d9;
+  --nw-ink-300: #9aacb8;
+
+  --nw-brand-400: #2f6b8c;
+  --nw-brand-500: #15455f;
+  --nw-brand-600: #0b2c41;
+  --nw-on-brand: #f2f0ea;
+  --nw-on-brand-muted: #a9c0cd;
+
+  --nw-accent-100: #2e2516;
+  --nw-accent-500: #e8c98e;
+  --nw-accent-700: #e0b36b;
+  --nw-accent-900: #efd4a3;
+  --nw-on-accent: #10293b;
+
+  --nw-positive-600: #58b58c;
+  --nw-negative-600: #e88b7a;
+}
+
+:root {
+  /* Fontfamilier */
+  --nw-font-display: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --nw-font-text: "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  --nw-font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Avstand — firepunktsskala */
+  --nw-space-1: 4px;
+  --nw-space-2: 8px;
+  --nw-space-3: 12px;
+  --nw-space-4: 16px;
+  --nw-space-5: 24px;
+  --nw-space-6: 32px;
+  --nw-space-7: 56px;
+  --nw-space-8: 88px;
+  --nw-space-9: 128px;
+
+  /* Hjørner */
+  --nw-radius-sm: 12px;
+  --nw-radius-md: 14px;
+  --nw-radius-lg: 16px;
+  --nw-radius-xl: 20px;
+  --nw-radius-2xl: 28px;
+  --nw-radius-pill: 999px;
+
+  /* Tetthet — standard er comfortable */
+  --nw-row: 56px;
+  --nw-cell-pad: 16px;
+}
+
+[data-density="compact"] {
+  --nw-row: 34px;
+  --nw-cell-pad: 8px;
+}
+
+/* ---------- Typografi ---------- */
+
+.nw-display-xl {
+  font-family: var(--nw-font-display);
+  font-size: 96px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+}
+
+.nw-display-l {
+  font-family: var(--nw-font-display);
+  font-size: 58px;
+  line-height: 1.04;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.nw-display-m {
+  font-family: var(--nw-font-display);
+  font-size: 44px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.nw-display-s {
+  font-family: var(--nw-font-display);
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.nw-figure-xl {
+  font-family: var(--nw-font-display);
+  font-size: 132px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.nw-figure-l {
+  font-family: var(--nw-font-display);
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.nw-figure-m {
+  font-family: var(--nw-font-display);
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.nw-body-l {
+  font-family: var(--nw-font-text);
+  font-size: 23px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.nw-body {
+  font-family: var(--nw-font-text);
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.nw-body-s {
+  font-family: var(--nw-font-text);
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.nw-label {
+  font-family: var(--nw-font-text);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.nw-caption {
+  font-family: var(--nw-font-text);
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.nw-overline {
+  font-family: var(--nw-font-text);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ---------- Grunnstiler ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--nw-surface-100);
+  color: var(--nw-ink-100);
+  font-family: var(--nw-font-text);
+  font-size: 18px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--nw-accent-700);
+}
+
+/* Alle klikkbare flater skal være minst 44px høye. */
+button,
+input,
+select,
+textarea,
+a[role="button"] {
+  font-family: inherit;
+  font-size: inherit;
+}
